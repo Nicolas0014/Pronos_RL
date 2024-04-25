@@ -1,8 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from '@components/Layout/Layout';
+import Home from '@pages/Home';
+import Matches from '@pages/Matches';
+import LeaderBoard from '@pages/LeaderBoard';
+import Account from '@pages/Account';
 import Page404 from '@pages/Page404';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import '@assets/scss/App.scss';
+import './App.scss';
 
 function App() {
   return (
@@ -11,6 +14,9 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/matches" element={<Matches />} />
+            <Route path="/leaderboard" element={<LeaderBoard />} />
+            <Route path="/account" element={<Account />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
         </Layout>

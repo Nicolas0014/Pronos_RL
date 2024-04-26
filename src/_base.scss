@@ -48,6 +48,14 @@ $breakpoints: (
   color: $tertiary-color;
 }
 
+@mixin text_type_2 {
+  font-size: 1.75rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 @mixin text_type_3 {
   font-size: 1rem;
   font-weight: 400;
